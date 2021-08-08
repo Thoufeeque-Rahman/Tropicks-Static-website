@@ -290,25 +290,27 @@ Author URL: http://w3layouts.com
       });
     });
   </script>
-    <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxPgNBa5MqsdrCmVhv4GY9Z9J9awR2E9y8Que_6YT-7oDeyTeyfkNHUKbkr1c7AiDBs/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
+
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxPgNBa5MqsdrCmVhv4GY9Z9J9awR2E9y8Que_6YT-7oDeyTeyfkNHUKbkr1c7AiDBs/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
         })
-    </script>
+    })
+</script>
+
   <!--//MENU-JS-->
   <script src="assets/js/bootstrap.min.js"></script>
 

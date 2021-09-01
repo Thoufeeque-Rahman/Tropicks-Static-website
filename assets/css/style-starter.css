@@ -15304,7 +15304,7 @@ h6.title {
 
 .m-timeline li {
   position: relative;
-  padding: 7px 0 24px 32px;
+  padding: 7px 0 50px 50px;
   transition: all 100ms;
   min-height: 44px;
 }
